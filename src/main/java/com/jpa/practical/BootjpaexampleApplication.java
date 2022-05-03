@@ -16,7 +16,6 @@ import java.util.Optional;
 public class BootjpaexampleApplication {
 
 	public static void main(String[] args) {
-
 		ApplicationContext context = SpringApplication.run(BootjpaexampleApplication.class, args);
 	}
 
