@@ -75,4 +75,15 @@ public class UserServices {
             user.setEmail(email);
         }
     }
+
+    // custom query implementations
+    public void findByName(String name) {
+        // -----Custom finder methods / Derieved query methods-----
+        // data by name
+        // data by name and password
+        // data by name or password
+        // data name starting with prefix
+        // data by name like 'Keyword'
+        System.out.println("FOUND BY NAME: "+userRepository.findByName(name));
+    }
 }

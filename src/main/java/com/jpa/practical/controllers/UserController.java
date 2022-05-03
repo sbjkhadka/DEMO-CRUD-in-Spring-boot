@@ -43,4 +43,10 @@ public class UserController {
                            @RequestParam(required = false) String email) {
         userServices.updateUser(userId, name, city, status, dob, email);
     }
+
+    // Custom query implementations
+    @GetMapping(path="/name/{name}")
+    public void findByName(@PathVariable("name") String name) {
+        userServices.findByName(name);
+    }
 }
