@@ -85,5 +85,6 @@ public class UserServices {
         // data name starting with prefix
         // data by name like 'Keyword'
         System.out.println("FOUND BY NAME: "+userRepository.findByName(name));
+        System.out.println("CUSTOM +"+ userRepository.getUsers());
     }
 }
